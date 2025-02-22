@@ -1,0 +1,25 @@
+<envios>
+    <tiendas>
+        <tienda zona="12">Tecnologia USAC</tienda>
+        <envio direccion="17 calle zona 4" estado="pagado">Marta perez</envio>
+        <envio direccion="5ta avenida zona 8" estado="no pagado">Mario Lopez</envio>
+        <envio direccion="17 calle zona 9" estado="no pagado">Juan Alvarez</envio>
+        <envio direccion="18 calle zona 6 de mixco" estado="pagado">Luis Maldonado</envio>
+        <envio direccion="17 calle zona 4" estado="pagado">Marta perez</envio>
+    </tiendas>
+    <tiendas>
+        <tienda zona="5">Todo tec</tienda>
+        <envio direccion="5ta calle zona 6" estado="pagado">Angel Bran</envio>
+        <envio direccion="7ma calle  zona 8" estado="no pagado">Alexander Hernandez</envio>
+        <envio direccion="3ra avenida  zona 9" estado="no pagado">Dulce Vela</envio>
+        <envio direccion="5ta calle zona 6" estado="pagado">Angel Bran</envio>
+        <envio direccion="3ra avenida zona 3" estado="pagado">Angel Bran</envio>
+    </tiendas>
+    <tiendas>
+        <tienda zona="14">Tecnologia y mas</tienda>
+        <envio direccion="5ta avenida zona 3" estado="pagado">Marta perez</envio>
+        <envio direccion="16-30  zona 1 de mixco" estado="no pagado">Ana Martínez</envio>
+        <envio direccion="16-30  zona 1 de mixco" estado="no pagado">Ana Martínez</envio>
+        <envio direccion="7 calle zona 21" estado="pagado">Luisa Martinez</envio>
+    </tiendas>
+</envios>
