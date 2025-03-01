@@ -1,0 +1,14 @@
+digraph G{ 
+node[shape=box]
+label ="Lista de tiendas" 
+nodo0[label="Tienda: mana, Zona: 4"]
+nodo1[label="Tienda: Manantial, Zona: 10"]
+nodo2[label="Tienda: tienda, Zona: 8"]
+nodo3[label="Tienda: nueva_tienda, Zona: 13"]
+{ nodo0 -> nodo1 }
+{nodo1 -> nodo2 }
+{nodo1 -> nodo0 }
+{nodo2 -> nodo3 }
+{nodo2 -> nodo1 }
+{ nodo3 -> nodo2 }
+}

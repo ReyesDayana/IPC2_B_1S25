@@ -3,4 +3,5 @@ class NodoTienda():
         self.id = 0
         self.tienda = tienda
         self.zona = zona
-        self.next = None
+        self.siguiente = None
+        self.anterior = None
