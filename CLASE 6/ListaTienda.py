@@ -8,8 +8,8 @@ class ListaTienda:
         self.ultimo = None
         self.tamanio = 0
     
-    def agregarAlFinal(self, tienda, zona):
-        nueva_tienda = NodoTienda(tienda,zona)
+    def agregarAlFinal(self, tienda, zona, listatienda):
+        nueva_tienda = NodoTienda(tienda,zona, listatienda)
         if self.primero is None:
             self.primero = nueva_tienda
             self.ultimo = nueva_tienda
@@ -26,7 +26,11 @@ class ListaTienda:
     def imprimirTiendas(self):
         auxiliar: NodoTienda = self.primero
         for tienda in range(self.tamanio):
-            print(f"Id: {auxiliar.id} Tienda: {auxiliar.tienda}, Zona: {auxiliar.zona}")
+            print(f"-----------------Tienda: {auxiliar.tienda}-------------------------------")
+            aux = auxiliar.envios.cabeza
+            for envio in range(auxiliar.envios.tamanio):
+                print(f"Cliente: {aux.cliente}, Direccion: {aux.direccion}")
+                aux = aux.next
             auxiliar = auxiliar.siguiente
 
     def BuscarPorInidice(self, indice):
@@ -75,7 +79,7 @@ class ListaTienda:
         resultado = "Lista_de_tiendas.jpg"
         os.system("dot -Tjpg "+dot+" -o "+resultado)
 
-    
+"""  
 lista_tienda = ListaTienda()
 
 lista_tienda.agregarAlFinal("mana","4")
@@ -84,3 +88,4 @@ lista_tienda.agregarAlFinal("tienda", "8")
 lista_tienda.agregarAlFinal("nueva_tienda", "13")
 lista_tienda.imprimirTiendas()
 lista_tienda.Graficar()
+""" 
