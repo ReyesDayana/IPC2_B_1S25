@@ -1,0 +1,5 @@
+Analisis del archivo
+Número total de líneas: 4
+Número total de palabras: 29
+Promedio de palabras por línea: 7.25
+Línea más larga (10 palabras): Aquí hay otra línea que tiene más palabras para analizar.

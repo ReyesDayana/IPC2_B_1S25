@@ -1,0 +1,4 @@
+Esta es una línea de ejemplo.
+Aquí hay otra línea que tiene más palabras para analizar.
+Esta es la línea más corta.
+La última línea también tiene algunas palabras.

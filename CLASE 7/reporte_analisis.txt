@@ -1,0 +1,6 @@
+Reporte del Archivo texto entrada
+Numero de lineas que comienzan con una vocal 3
+Numero de lineas que comienzan con una consonante 3
+Número de líneas que contienen números: 2
+Líneas completamente en mayúsculas:
+- HOY ES UN DÍA EN MAYÚSCULAS.
