@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ventas>
+    <venta>
+        <producto>Televisor 42 pulgadas</producto>
+        <cantidad>5</cantidad>
+        <precio>400</precio>
+        <fecha>2024-10-23</fecha>
+    </venta>
+    <venta>
+        <producto>Smartphone Galaxy S22</producto>
+        <cantidad>10</cantidad>
+        <precio>800</precio>
+        <fecha>2024-10-23</fecha>
+    </venta>
+    <venta>
+        <producto>Portátil Lenovo ThinkPad</producto>
+        <cantidad>3</cantidad>
+        <precio>1000</precio>
+        <fecha>2024-10-22</fecha>
+    </venta>
+</ventas>

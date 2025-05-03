@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Subir Reporte de Ventas</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Administrador</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/upload_xml">Subir XML</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ver_estadisticas">Ver Estadísticas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-center bg-primary text-white">
+                    <h3>Subir Reporte de Ventas (XML)</h3>
+                </div>
+                <div class="card-body">
+                    {% if error %}
+                    <div class="alert alert-danger" role="alert">{{ error }}</div>
+                    {% endif %}
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="file">Seleccionar archivo XML</label>
+                            <input type="file" class="form-control-file" id="file" name="file" accept=".xml">
+                        </div>
+                        {% if xml_content %}
+                        <div class="form-group">
+                            <label for="xml_content">Contenido del archivo XML</label>
+                            <textarea class="form-control" id="xml_content" name="xml_content" rows="10" required>{{ xml_content }}</textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Archivo</button>
+                        {% else %}
+                        <button type="submit" class="btn btn-primary btn-block">Cargar y Editar Archivo</button>
+                        {% endif %}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
